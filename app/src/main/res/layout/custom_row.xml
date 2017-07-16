@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@layout/border2"
+    android:descendantFocusability="blocksDescendants" >
+
+
+    <TextView
+        android:id="@+id/subName"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:textColor="#0a97c2"
+        android:foregroundGravity="center_horizontal|center"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48.5"
+            android:id="@+id/bunkdays"
+            android:textColor="#0a97c2"
+            android:gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48.5"
+            android:id="@+id/workingdays"
+            android:gravity="center_horizontal"
+            android:textColor="#0a97c2"
+            android:background="#FFFFFF"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        tools:ignore="InefficientWeight">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48.5"
+            android:id="@+id/percent"
+            android:textColor="#0a97c2"
+            android:gravity="center_horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48.5"
+            android:id="@+id/minpercent"
+            android:background="#FFFFFF"
+            android:textColor="#0a97c2"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

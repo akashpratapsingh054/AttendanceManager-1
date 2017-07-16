@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffcfc"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/subName"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#90f2ef"
+        android:textColor="#000000"
+        android:foregroundGravity="center_horizontal|center"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="22dp"/>
+
+    <LinearLayout
+        android:id="@+id/bunkButtons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText,UselessLeaf">
+
+        <Button
+            android:id="@+id/addBunk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_row="0"
+            android:background="#03b9f1"
+            android:text="Bunk++"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/subBunk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_row="1"
+            android:background="#03b9f1"
+            android:text="Bunk --"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/numberofBunks"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@layout/border"
+            tools:ignore="DuplicateIds,HardcodedText,InefficientWeight"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/totalButtons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        tools:ignore="UselessLeaf">
+
+        <Button
+            android:id="@+id/addTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_row="0"
+            android:background="#03b9f1"
+            android:text="Total++"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam" />
+
+        <Button
+            android:id="@+id/subTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_row="1"
+            android:background="#03b9f1"
+            android:text="Total--"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle,HardcodedText,ObsoleteLayoutParam,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/numberofWorkingDays"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:background="@layout/border"
+            tools:ignore="HardcodedText,InefficientWeight"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        tools:ignore="UselessLeaf"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/showPercentage"
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_vertical"
+        android:background="#90f2ef"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/minpercent"
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#90f2ef"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/uppp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_margin="16dp"
+        tools:ignore="HardcodedText"
+        android:textStyle="bold"
+        android:background="#90f2ef"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete subject"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:background="#90f2ef"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
